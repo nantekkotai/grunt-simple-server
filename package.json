@@ -1,0 +1,23 @@
+{
+  "name": "grunt-simple-server",
+  "version": "0.0.1",
+  "description": "Development server with minimal simple.",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nantekkotai/grunt-simple-server.git"
+  },
+  "author": "Nobuyuki OSAWA",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/nantekkotai/grunt-simple-server/issues"
+  },
+  "homepage": "https://github.com/nantekkotai/grunt-simple-server",
+  "dependencies": {
+    "grunt": "*",
+	"grunt-contrib-connect": "*"
+  }
+}
