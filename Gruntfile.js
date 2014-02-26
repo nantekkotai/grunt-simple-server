@@ -8,17 +8,16 @@ module.exports = function (grunt) {
 	    options: {
 		  port: 9001,
 		  //keepalive: true,  // watch無しのserver単体で動かす時はtrue
-		  hostname: 'localhost'
+		  hostname: 'localhost',
+		  base: './htdocs'
 		}
 	  }
 	},
 	watch: {
-	  html: {
-	    files: '**/*.html',
-		tasks: [],
-		options: {
-		  livereload: true
-		}
+	  files: ['./htdocs/*'],
+	  tasks: [],
+	  options: {
+	    livereload: true
 	  }
 	}
   });
