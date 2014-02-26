@@ -7,13 +7,23 @@ module.exports = function (grunt) {
 	  server: {
 	    options: {
 		  port: 9001,
-		  keepalive: true,
+		  //keepalive: true,  // watch無しのserver単体で動かす時はtrue
 		  hostname: 'localhost'
+		}
+	  }
+	},
+	watch: {
+	  html: {
+	    files: '**/*.html',
+		tasks: [],
+		options: {
+		  livereload: true
 		}
 	  }
 	}
   });
 
   grunt.loadNpmTasks('grunt-contrib-connect');
-  grunt.registerTask('default', ['connect']);
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.registerTask('default', ['connect', 'watch']);
 }
